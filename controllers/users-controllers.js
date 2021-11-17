@@ -4,19 +4,9 @@ const { validationResult } = require("express-validator");
 const User = require("../models/user");
 const jwt = require("jsonwebtoken");
 
-// const DUMMY_USERS = [
-//   {
-//     id: "u1",
-//     name: "Petri K",
-//     email: "test@test.com",
-//     password: "testpass",
-//   },
-// ];
 
 const getUsers = async (req, res, next) => {
-  // res.json({ users: DUMMY_USERS });
   let users;
-  // const { email, name } = req.body;
 
   try {
     users = await User.find({}, "-password");
@@ -33,7 +23,7 @@ const signup = async (req, res, next) => {
       new HttpError("Invalid inputs passewd, please check your data", 422)
     );
   }
-  //places
+  
   const { name, email, password } = req.body;
 
   let existingUser;
@@ -68,7 +58,6 @@ const signup = async (req, res, next) => {
     places: [],
   });
 
-  // DUMMY_USERS.push(createdUser);
 
   try {
     await createdUser.save();
@@ -100,11 +89,6 @@ const signup = async (req, res, next) => {
 
 const login = async (req, res, next) => {
   const { email, password } = req.body;
-
-  // const identifiedUser = DUMMY_USERS.find((u) => email === email);
-  // if (!identifiedUser || identifiedUser.password !== password) {
-  //   return next(new HttpError("Could not identify user", 401));
-  // }
 
   let existingUser;
 
