@@ -6,12 +6,11 @@ This this an application which i am developing to learn more about full-stack de
 This is the NodeJS(Express) part of the app. Frontend part can be found [here](https://github.com/Petrikur/MernAppReact).
 
 In the app you can upload places with image and see other users places which they uploaded. It uses google maps api and geolocation api to convert address to location in map.
-
+You can also edit your own places and delete them.
 
 ## Usage
 
-You can test this app [here](https://mern-322611.web.app/),
-I have currently free hosting so images will only last briefly. Uploading images can be tested still.
+My free tier hosting has ended so app cant be tested right now.
 
 ## Installation
 
