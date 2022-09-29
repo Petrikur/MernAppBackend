@@ -10,7 +10,7 @@ You can also edit your own places and delete them.
 
 ## Usage
 
-My free tier hosting has ended so app cant be tested right now. You can find few images of the app [here](https://github.com/Petrikur/MernAppReact/tree/main/images).
+Project is not currently hosted anywhere. You can find few images of the app [here](https://github.com/Petrikur/MernAppReact/tree/main/images).
 
 ## Installation
 
